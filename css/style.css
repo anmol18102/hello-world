@@ -1,0 +1,256 @@
+/* css reset */
+*{
+    margin:0;
+    padding: 0;
+}
+/* css variables */
+:root{
+    --navbar-height: 59px;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+    
+    /* background-color: black; */
+}
+/* logo and image  */
+#logo{
+    margin: -25px 15px;
+    padding: -44px;
+}
+
+#logo img{
+    height: 70px;
+    margin: 22px 2px;
+}
+
+/* navbar list styling */
+#navbar ul{
+            display: flex;
+}
+#navbar::before{
+    background-color: black;
+    position: absolute;
+    
+
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    content: "";
+  
+
+}
+#time{
+    color: white;
+    padding: 22px 42px 33px 427px;
+    /* transition: all;
+    
+    transition-delay: 2; */
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 34px;
+ border-radius:20px ;
+ text-decoration:none;
+ color: white;
+}
+#navbar ul li a:hover{
+    
+    color: black;
+    background-color: aliceblue;
+}
+
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+    
+}
+
+#home::before{
+    
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+}
+ /* services section */
+ /* #ser{
+    margin: 34px;
+    display: flex;
+    border: 22px solid rgb(15, 127, 140);
+    height: 100px;
+ }
+ 
+ #ser.box img{
+    
+   height: 1px;
+
+ }
+ #ser{
+      */
+ 
+
+
+      #services{
+        margin: 0px;
+        display: flex;
+      }
+      #services .box{
+           border: 2px solid green;
+           padding: 4px;
+           margin:7px
+           
+            18px;
+           border-radius: 20px;
+
+      }
+      #services .box img{
+       
+       height: 120px;
+    display: block;
+    margin: auto;
+   }
+   /* client section */
+
+   #client-section{
+      height: 334px;
+     
+   }
+   #clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 5px;
+    }
+    .client-item img{
+        height: 120px;
+    width:160px;
+    
+
+
+    }
+    #client-section::before{
+        content: "";
+        position: absolute;
+        /* background:url('../bg1.jpg'); */
+        width: 100%;
+        height: 41%;
+        z-index: -1;
+        opacity: .4;
+    }
+    /* contact section  */
+    #contact{
+        position: relative;
+      
+    }
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url('../contact2.jpg') no-repeat center center/cover;
+
+}
+footer{
+    background: black;
+    color: white;
+    height: 20px;
+    padding-top: 5px;
+}
+/* contact us */
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-bax{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom: 34px;
+    padding-left: 60px;
+ } 
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+}
+
+
+
+
+
+    /* utility classess */
+
+    .h-primary{
+        font-size: 3.8rem;
+        padding: 12px;
+    }
+    .h-secondary{
+        font-size: 2.1rem;
+        padding: 12px;
+    }
+    .btn{
+        padding: 4px 28px;
+        border-radius: 22px;
+        margin: 12px;
+        font-size: 1.5rem;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+       align-self: center;
+       text-decoration: none;
+       text-decoration-color: antiquewhite;
+    }
+    
+    .btn:hover{
+        background-color:white;
+        color: black;
+        
+    }
+    /* .btnlink{
+        /*  */
+    /* } */ 
+    /* .btn li a{
+
+    } */
+    .center{
+        text-align: center;
+    }
+    
+   
+    
+
